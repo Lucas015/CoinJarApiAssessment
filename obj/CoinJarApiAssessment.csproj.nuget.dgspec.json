@@ -14,7 +14,7 @@
         "outputPath": "/Users/lucashlongwane/VisualStudioProjects/CoinJarApiAssessment/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lucashlongwane/.nuget/NuGet/NuGet.Config"
+          "/Users/lucashlongwane/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -40,7 +40,7 @@
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,7 +1,9 @@
-
-public interface ICoinJar
+namespace CoinJarApiAssessment.Interface
 {
-    void AddCoin(ICoin coin);
-    decimal GetTotalAmount();
-    void Reset();   
+    public interface ICoinJar
+    {
+        void AddCoin(eCoinType coinType, int count = 1);
+        decimal GetTotalAmount();
+        void Reset();
+    }
 }

@@ -1,5 +1,10 @@
-public interface ICoin
+namespace CoinJarApiAssessment.Interface
 {
-    decimal Amount { get; set; }
-    decimal Volumne { get; set; }
+    public interface ICoin
+    {
+        decimal Amount { get; set; }
+        decimal Volumne { get; set; }
+    }
+
 }
+

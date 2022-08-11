@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CoinJarApiAssessment.Interface;
+using CoinJarApiAssessment.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +34,8 @@ namespace CoinJarApiAssessment
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CoinJarApiAssessment", Version = "v1" });
             });
+            //services.AddSingleton<CoinJar>(provider => new CoinJar());
+            services.AddSingleton<ICoinJar, CoinJarRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
