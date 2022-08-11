@@ -26,13 +26,13 @@ namespace CoinJarApiAssessment.Controllers
             return _coinJar.GetTotalAmount();
         }
 
-        [HttpPost]
+        [HttpPost("addCoin")]
         public void AddCoin(eCoinType coinType)
         {
             _coinJar.AddCoin(coinType);
         }
 
-        [HttpPost]
+        [HttpPost("reset")]
         public void Reset()
         {
             _coinJar.Reset();
